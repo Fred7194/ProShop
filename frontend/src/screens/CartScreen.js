@@ -50,7 +50,7 @@ const CartScreen = ({ match, location, history }) => {
                   </Col>
                   <Col md={2}>${item.price}</Col>
                   <Col md={2}>
-                    <Form
+                    <Form.Control
                       as='select'
                       value={item.qty}
                       onChange={(e) =>
@@ -64,7 +64,7 @@ const CartScreen = ({ match, location, history }) => {
                           {x + 1}
                         </option>
                       ))}
-                    </Form>
+                    </Form.Control>
                   </Col>
                   <Col md={2}>
                     <Button
